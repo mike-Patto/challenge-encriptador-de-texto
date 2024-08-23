@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encoder</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main class="contenedor">
+        <section class="contenedor__1">
+            <div>
+                 <textarea name="ingreso_text" id="ingreso_texto" placeholder="ingrese texto a encriptar" ></textarea>               
+                <div class="contenedor__1__botones">
+                    <button onclick="botonEncriptar()" class="contenedor__1__botones__1" >encriptar</button>
+                    <button onclick="botonDesencriptar()" class="contenedor__1__botones__1">desencriptar</button> 
+                </div>
+                <div class="lista">
+                    <ul>
+                        <li>sin carácteres especiales</li>
+                        <li>sin mayúsculas</li>
+                    </ul>
+                </div>
+            </div>   
+        </section>
+        <section class="contenedor__2">
+            <article class="contenedor__2__article">
+               <p>Texto Encriptado</p>
+            </article>            
+            <div class="contenedor__2__botones">
+               <button id="copiar" onclick="botonCopiar()" ><img  class="botones2" src="./copiar.png" alt="boton copiar"></button>
+                <button id="pegar" ><img  class="botones2"  src="./pegar.png" alt="boton pegar"></button>
+                <button id="limpiar" onclick="botonLimpiar()" ><img   class="botones2"  src="./limpiar.png" alt="boton limpiar"></button>               
+            </div>           
+        </section>
+    </main>  
+    <footer>
+        
+    </footer>
+    <script src="./script.js" ></script>
+</body>
+</html>
